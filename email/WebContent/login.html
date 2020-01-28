@@ -1,0 +1,36 @@
+<html>
+    <style>
+    h1{
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    input{
+        margin-left: 7em;
+        margin-bottom: 1.2em;
+    }
+    label{
+        position: absolute;
+    }
+    </style>
+    <body>
+        <h1>Login Form</h1>
+                <form action="LoginServlet" method="POST">
+                <label>Email:</label><input type="email" placeholder="Enter the Email"  name="email"/><br>
+                <label>Password:</label><input type="password" name="password" placeholder="Enter the password" id="myInput" /><br>
+             	<input type="checkbox" onclick="myFunction()">Show Password<br><br>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+
+</script>
+                <button type="submit">Login</button><br>
+        </form>
+    </body>
+</html>

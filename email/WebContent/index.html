@@ -1,0 +1,106 @@
+<html>
+    <head>
+    <style>
+    .reg{
+        width:500px;
+        height: 550px;
+	    box-shadow:0 0 10px 0 rgba(0,0,0,0.3);
+	    background-color:#fff;
+	    padding:20px;
+    }
+    .login{
+        width:400px;
+        height: 200px;
+	    box-shadow:0 0 10px 0 rgba(0,0,0,0.3);
+	    background-color:#fff;
+	    padding:20px;
+        margin-left: 60em;
+        margin-top: -38em;
+    }
+    input{
+        margin-left: 8em;
+        margin-bottom: 1.2em;
+    }
+    textarea{
+        margin-left: 8em;
+        margin-bottom: 1.2em;
+    }
+    select{
+        margin-bottom: 1.2em;
+        margin-left: 8em;
+    }
+    label
+    {
+        position:absolute;
+    }
+    button{
+        margin-left:3em;
+        padding:10px;
+        width: 30%;
+	    border-radius:20px;
+        font-size: 15px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    hr{
+        border-style: solid;
+        border-width: 10px;
+        border-color: red;
+    }
+    h3{
+        font-size: 25px;
+        background-color: red;
+    }
+    h4{
+        font-size: 25px;
+        text-align: center;
+        background-color: red;
+    }
+    .linpemail{
+        margin-left: 7.6em;
+    }
+    .linppassword{
+        margin-left: 6em;
+    }
+    .loginbutton{
+        margin-left: 5em;
+        padding:10px;
+        width: 60%;
+	    border-radius:20px;
+        font-size: 15px;
+    }
+    </style>
+    </head>
+    <body>
+        <h1>Company Mailer</h1>
+        <hr></hr>
+        <form class="reg" action="RegisterServlet" method="POST">
+            <h3>Registration Form</h3>
+            <label>Name:</label><input type="text" name="name"/><br>
+            <label>Email:</label><input type="text" name="email"/>@gmail.com<br>
+            <label>Password:</label><input type="password" name="password"/><br>
+            <label>Gender:</label><input type="radio" name="gender" value="male"/>Male<input type="radio" name="gender" value="female"/>Female<br>
+            <label>Date Of Birth:</label><input type="date" name="dob"/><br>
+            <label>Address:</label><textarea rows="4" cols="25" name="address"></textarea><br>
+            <label>City:</label><input type="text" name="city"/><br>
+            <label>State:</label><input type="text" name="state"/><br>
+            <label>Country:</label>
+            <select name="country">
+                <option>Select-Country</option>
+                <option>India</option>
+                <option>Usa</option>
+                <option>China</option>
+            </select><br>
+            <label>Contact:</label><input type="tel" name="contact"/><br>
+            <button type="submit">register</button>
+            <button type="submit">clear</button>
+        </form>
+        <form class="login">
+            <h4>Login Form</h4>
+            Email:<input class="linpemail" type="text"/><br>
+            Password:<input class="linppassword" type="password"/>
+            <button class="loginbutton" type="submit">login</button>
+        </form>
+    </body>
+</html>
